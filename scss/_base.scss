@@ -1,0 +1,82 @@
+*{
+  font-family: "Noto Sans TC", sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: middle;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  @extend .text-black-0;
+}
+.card {
+  background-color: $black-100;
+  &-body {
+    padding: 0;
+  }
+}
+.font1 {
+  @extend .fw-400;
+  @extend .fz-d875;
+  @extend .lh-150;
+}
+.font2 {
+  @extend .fw-400;
+  @extend .fz-1;
+  @extend .lh-150;
+}
+.font3 {
+  @extend .fw-700;
+  @extend .fz-d875;
+  @extend .lh-150;
+}
+.font4 {
+  @extend .fw-700;
+  @extend .fz-1;
+  @extend .lh-150;
+}
+.font5 {
+  @extend .fw-900;
+  @extend .fz-1d25;
+  @extend .lh-120;
+}
+.font6 {
+  @extend .fw-900;
+  @extend .fz-2;
+  @extend .lh-120;
+}
+.font7 {
+  @extend .fw-900;
+  @extend .fz-3;
+  @extend .lh-120;
+}
+.font8 {
+  @extend .fw-900;
+  @extend .fz-5;
+  @extend .lh-120;
+}
+.font9 {
+  @extend .fw-900;
+  @extend .fz-7d5;
+  @extend .lh-120;
+}

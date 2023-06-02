@@ -1,0 +1,12 @@
+.btn {
+  @extend .text-black-0;
+  @extend .border-black-0;
+  border-radius: 1rem;
+  padding: 20px 40px;
+  &:hover {
+    background-color: $primary;
+    @extend .text-black-100;
+    border: none;
+    margin-bottom: 2px;
+  }
+}

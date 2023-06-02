@@ -1,0 +1,21 @@
+@import "./variable";
+@each $weight in $font-weights {
+    .fw-#{$weight} {
+      font-weight: $weight;
+    }
+  }
+  @each $size-class, $size in $font-sizes {
+    .fz-#{$size-class} {
+      font-size: $size;
+    }
+  }
+  @each $lh-class, $line-height in $line-heights {
+    .lh-#{$lh-class} {
+      line-height: $line-height;
+    }
+  }
+  @mixin madia-lg {
+    @media ($media-lg) {
+      @content;
+    }
+  }
