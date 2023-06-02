@@ -37,7 +37,7 @@
 
 ## // scss-docs-start spacer-variables-maps
 - $spacer: 1rem !default;
-- - $spacers: (
+- $spacers: (
   - d25: 0.25rem,
   - d5: 0.5rem,
   - d625: 0.625rem,
