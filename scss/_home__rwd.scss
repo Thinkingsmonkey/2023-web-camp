@@ -1,8 +1,9 @@
+// home{}
 @include madia-lg {
   .l-header__logo {
     height: 24px;
   }
-  .l-banner {
+  .banner {
     ul {
       width: 71%;
     }
@@ -11,10 +12,12 @@
       font-size: 48px;
       line-height: 120%;
     }
-    &__animation__item1,
-    &__animation__item2,
-    &__animation__item3 {
-      width: 33.33333%;
+    .l-banner__animation{
+      &__item1,
+      &__item2,
+      &__item3 {
+        width: 33.33333%;
+      }
     }
   }
   .service {
@@ -74,3 +77,4 @@
     }
   }
 }
+
