@@ -1,10 +1,46 @@
 @import "./home__rwd"; //pricing{}
 @include madia-lg {
+    .banner{
+        ul{
+            width: auto;
+        }
+        & li:last-child h3{
+            font-size: 1.75rem;
+        }
+        .l-banner__animation{
+            margin-top: 258px;
+        }
+    }
     .price {
       &__list {
-        & li:nth-child(n + 2) {
-          margin-top: 24px;
-        }
+        & .row{
+            & > .col:nth-child(n + 2) {
+              margin-top: 24px;
+            }
+            & .card-body {
+                min-height: 176px;
+            }
+        } 
       }
+    }
+    .rule {
+        flex-direction: column;
+        h2 {
+            font-size: 20px;
+        }
+        .rule__list {
+            margin-left: 0;
+            margin-top: 3rem;
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .qa{
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }

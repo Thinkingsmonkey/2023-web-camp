@@ -14666,14 +14666,16 @@ img {
   margin-top: 238px;
 }
 
-.price__list li:nth-child(n+3) {
+.price__list .row > .col:nth-child(n+3) {
   margin-top: 24px;
 }
 .price__list .card {
   border: 1px solid #525252;
+  width: 100%;
 }
 .price__list .card .card-body {
   padding: 20px 32px;
+  min-height: 254px;
 }
 .price__list .card .card-body ul {
   padding-left: 24px;
@@ -14705,6 +14707,33 @@ img {
   font-size: 16px;
   vertical-align: baseline;
   margin-left: 12px;
+}
+
+.rule__list {
+  margin-left: auto;
+}
+.rule__list li:nth-child(n+2) {
+  margin-top: 2.5rem;
+}
+.rule__list__text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.qa__list span {
+  width: 14px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+}
+.qa__list span::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background-color: white;
+  transform: rotate(90deg);
 }
 
 @media (max-width: 992px) {
@@ -14766,7 +14795,39 @@ img {
   }
 }
 @media (max-width: 992px) {
-  .price__list li:nth-child(n+2) {
+  .banner ul {
+    width: auto;
+  }
+  .banner li:last-child h3, .banner li:last-child .h3 {
+    font-size: 1.75rem;
+  }
+  .banner .l-banner__animation {
+    margin-top: 258px;
+  }
+  .price__list .row > .col:nth-child(n+2) {
     margin-top: 24px;
+  }
+  .price__list .row .card-body {
+    min-height: 176px;
+  }
+  .rule {
+    flex-direction: column;
+  }
+  .rule h2, .rule .h2 {
+    font-size: 20px;
+  }
+  .rule .rule__list {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .rule .rule__list h3, .rule .rule__list .h3 {
+    font-size: 2rem;
+  }
+  .rule .rule__list p {
+    font-size: 1rem;
+  }
+  .qa {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }/*# sourceMappingURL=pricing.css.map */
