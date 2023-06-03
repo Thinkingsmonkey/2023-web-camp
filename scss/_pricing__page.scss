@@ -1,9 +1,58 @@
-@import "./home__page"
+@import "./home__page";
 
 // .pricing{}
-
-
-
-
+.banner {
+  & li:last-child {
+    width: 50%;
+    margin-left: auto;
+  }
+  .l-banner__animation {
+    margin-top: 238px;
+  }
+}
+.price {
+  &__list {
+    & li:nth-child(n + 3) {
+      margin-top: 24px;
+    }
+    .card {
+      border: 1px solid $black-80;
+      .card-body {
+        padding: 20px 32px;
+        ul {
+          padding-left: 24px;
+          li {
+            &::marker {
+                font-size: 10px;
+            }
+            list-style-type: disc;
+            .card-text {
+              color: $black-20;
+            }
+          }
+        }
+      }
+      .card-footer {
+        border-top: 1px solid $black-80;
+        padding: 20px 32px;
+        .price__tokens {
+          font-weight: 400;
+          color: $black-60;
+        }
+        button {
+          background-color: $black-100;
+          color: $black-0;
+          border: none;
+          margin-left: auto;
+          .material-symbols-outlined {
+            font-size: 16px;
+            vertical-align: baseline;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}
 
 // .price{}

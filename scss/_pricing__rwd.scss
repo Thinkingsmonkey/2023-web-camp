@@ -1,5 +1,10 @@
-@import "./home__rwd"
-//pricing{}
-
-  
-  
+@import "./home__rwd"; //pricing{}
+@include madia-lg {
+    .price {
+      &__list {
+        & li:nth-child(n + 2) {
+          margin-top: 24px;
+        }
+      }
+    }
+}
