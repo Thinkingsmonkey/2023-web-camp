@@ -14,12 +14,11 @@
       flex-grow: 1;
       display: none !important;
     }
-    .l-footer{
+    .l-footer {
       display: none !important;
     }
   }
 }
-
 
 .l-header {
   height: 80px;
@@ -138,20 +137,17 @@
 
         li {
           flex-shrink: 0;
-          margin-bottom: 10px;
           margin-right: 8px;
-          a {
+          button {
             color: $black-60;
             padding: 8px 16px;
-            display: inline-block;
-          }
-          &.active {
-            color: $black-100;
-            background-color: $black-20;
-            border-radius: 1rem;
-            @extend .font4;
-            a {
+            background-color: $black-0;
+            border: none;
+            &.active {
               color: $black-100;
+              background-color: $black-20;
+              border-radius: 1rem;
+              @extend .font4;
             }
           }
         }
@@ -222,7 +218,7 @@
 .l-footer {
   border-top: 1px solid $black-0;
   padding: 20px 0;
-  .copyright{
+  .copyright {
     margin-right: 100px;
   }
 }

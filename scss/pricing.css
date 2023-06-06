@@ -14315,7 +14315,7 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
-.fw-700, .font4, .l-tools__filter__list ul li.active, .font3 {
+.fw-700, .font4, .l-tools__filter__list ul li button.active, .font3 {
   font-weight: 700;
 }
 
@@ -14323,7 +14323,7 @@ textarea.form-control-lg {
   font-weight: 900;
 }
 
-.fz-1, .font4, .l-tools__filter__list ul li.active, .font2 {
+.fz-1, .font4, .l-tools__filter__list ul li button.active, .font2 {
   font-size: 1rem;
 }
 
@@ -14355,7 +14355,7 @@ textarea.form-control-lg {
   line-height: 120%;
 }
 
-.lh-150, .font4, .l-tools__filter__list ul li.active, .font3, .font2, .font1 {
+.lh-150, .font4, .l-tools__filter__list ul li button.active, .font3, .font2, .font1 {
   line-height: 150%;
 }
 
@@ -14528,21 +14528,18 @@ img {
 }
 .l-tools__filter__list ul li {
   flex-shrink: 0;
-  margin-bottom: 10px;
   margin-right: 8px;
 }
-.l-tools__filter__list ul li a {
+.l-tools__filter__list ul li button {
   color: #919191;
   padding: 8px 16px;
-  display: inline-block;
+  background-color: #ffffff;
+  border: none;
 }
-.l-tools__filter__list ul li.active {
+.l-tools__filter__list ul li button.active {
   color: #020202;
   background-color: #f2f2f2;
   border-radius: 1rem;
-}
-.l-tools__filter__list ul li.active a {
-  color: #020202;
 }
 .l-tools__list .card {
   border: 1px solid #f2f2f2;
@@ -14833,6 +14830,9 @@ img {
     font-size: 2rem;
     width: 80%;
     margin: 0 auto;
+  }
+  .l-tools-wrap .l-tools .l-tools__filter__list ul li {
+    margin-bottom: 5px;
   }
   .l-site-map img {
     margin-bottom: 2.5rem;
