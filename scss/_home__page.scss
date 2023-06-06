@@ -23,26 +23,51 @@
 .partner__lists {
   position: relative;
   overflow: hidden;
-  &::after {
+  
+  & ul::after {
     content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    position: sticky;
+    right: -2px;
+    padding-right: 160px;
     background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 0) 20%,
-      rgba(255, 255, 255, 0) 80%,
+      rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     );
   }
-  &__list:first-child {
-    position: relative;
-    left: -40px;
+  & ul::before {
+    content: "";
+    position: sticky;
+    left: -2px;
+    padding-left: 160px;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
   &__list {
     gap: 20px;
+    position: relative;
+    justify-content: center;
+    overflow: scroll;
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: $black-40;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $black-20;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
     * {
       flex-shrink: 0;
     }
