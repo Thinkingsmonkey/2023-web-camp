@@ -1,27 +1,57 @@
+.l-burger__menu {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  height: 100vh;
+  // display: flex;
+  display: none;
+  .container {
+    display: flex;
+    flex-direction: column;
+    .l-site-map {
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+}
+
+
 .l-header {
   height: 80px;
   border-bottom: 1px solid #fff;
   &__logo {
-    height: 50%;
-    &__img {
-      height: 100%;
+    display: flex;
+    align-items: center;
+    .h1 {
+      a {
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+        text-indent: 101%;
+        float: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 40px;
+      }
     }
   }
-  &__burger{
+  &__burger {
     width: 18px;
     height: 2.4px;
     background-color: $black-0;
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       width: 18px;
       height: 2.4px;
       background-color: $black-0;
       position: absolute;
       top: -5.4px;
     }
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       width: 18px;
       height: 2.4px;
       background-color: $black-0;

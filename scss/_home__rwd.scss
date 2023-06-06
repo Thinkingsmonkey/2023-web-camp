@@ -1,7 +1,12 @@
 // home{}
 @include madia-lg {
   .l-header__logo {
-    height: 24px;
+    height: 30%;
+    .h1{
+      a {
+        height: 24px;
+      }
+    }
   }
   .banner {
     ul {
