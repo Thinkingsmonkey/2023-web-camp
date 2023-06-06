@@ -14594,6 +14594,9 @@ img {
   border-top: 1px solid #ffffff;
   padding: 20px 0;
 }
+.l-footer .copyright {
+  margin-right: 100px;
+}
 
 .l-top {
   margin-left: auto;
@@ -14739,6 +14742,12 @@ img {
   }
   .l-site-map img {
     margin-bottom: 2.5rem;
+  }
+  .l-footer > * {
+    width: 50%;
+  }
+  .l-footer .copyright {
+    margin-right: 0;
   }
   .l-footer ul {
     order: 2;

@@ -76,6 +76,12 @@
     }
   }
   .l-footer {
+    & > * {
+      width: 50%;
+    }
+    .copyright{
+      margin-right: 0;
+    }
     ul {
         order: 2;
         margin-top: 3rem;
