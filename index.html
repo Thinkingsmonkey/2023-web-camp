@@ -22,10 +22,14 @@
     />
     <link rel="stylesheet" href="./scss/home.css" />
   </head>
+  <!--
+    ! l-burger__menu => l-header
+    ! l-header => l-header__nav 
+  -->
   <body class="bg-black-100">
-    <header class="l-burger__menu ">
+    <header class="l-header">
       <div class="container">
-        <div class="l-header d-flex justify-content-between align-items-center">
+        <div class="l-header__nav d-flex justify-content-between align-items-center">
           <div class="l-header__logo">
             <h1 class="h1"><a href="./index.html">AI 工具王</a></h1>
           </div>
@@ -40,7 +44,7 @@
           <div class="l-header__burger d-lg-none"></div>
         </div>
         <div
-          class="l-site-map open d-flex justify-content-center align-items-center"
+          class="l-site-map d-flex justify-content-center align-items-center"
         >
           <div class="l-site-map__list col-12 col-lg-6 order-2 order-lg-1">
             <ul class="d-flex flex-column gap-d5">
@@ -49,7 +53,7 @@
             </ul>
           </div>
         </div>
-        <div class="l-footer open d-flex align-items-end flex-wrap">
+        <div class="l-footer d-flex align-items-end flex-wrap">
           <div class="copyright font4">AI工具王 © 2023</div>
           <ul class="d-flex gap-1d25 bg-black-100">
             <li>
@@ -71,7 +75,6 @@
     </header>
     <main>
       <section class="container">
-      
         <div class="banner mt-7d5">
           <ul>
             <li>

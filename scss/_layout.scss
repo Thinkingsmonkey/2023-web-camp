@@ -1,5 +1,5 @@
-.l-burger__menu {
-  position: fixed;
+.l-header {
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -23,7 +23,10 @@
 
 .l-header {
   height: 80px;
-  border-bottom: 1px solid #fff;
+  &__nav {
+    height: 80px;
+    border-bottom: 1px solid #fff;
+  }
   &__logo {
     display: flex;
     align-items: center;

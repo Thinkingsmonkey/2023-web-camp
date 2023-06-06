@@ -1,12 +1,32 @@
 // home{}
 @include madia-lg {
-  .l-header__logo {
-    height: 30%;
-    .h1{
-      a {
-        height: 24px;
+  .l-header {
+    &.open {
+      height: 100vh;
+      position: fixed;
+    }
+    .container > *:not(:nth-child(1)){
+      &.open{
+        display: flex !important;
       }
     }
+    .l-header__logo {
+      .h1{
+        a {
+          height: 24px;
+        }
+      }
+    }
+    // .l-site-map{
+    //   &.open {
+    //     display: flex !important;
+    //   }
+    // }
+    // .l-footer {
+    //   &.open {
+    //     display: flex !important;
+    //   }
+    // }
   }
   .banner {
     ul {
@@ -71,11 +91,13 @@
     }
   }
   .l-site-map{
+    
     img {
         margin-bottom: 2.5rem;
     }
   }
   .l-footer {
+    
     & > * {
       width: 50%;
     }
