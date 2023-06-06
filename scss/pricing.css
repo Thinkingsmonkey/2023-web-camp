@@ -14633,6 +14633,11 @@ img {
   padding: 80px 40px;
   width: 100%;
 }
+.service__card__item .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 80px;
+}
+
 .service__card__img {
   width: 80px;
 }
@@ -14786,7 +14791,7 @@ img {
   .banner ul {
     width: 71%;
   }
-  .banner h3, .banner .h3 {
+  .banner h2, .banner .h2 {
     font-weight: 900;
     font-size: 48px;
     line-height: 120%;
